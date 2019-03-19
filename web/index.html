@@ -1,0 +1,85 @@
+
+    
+    <html>
+    <head>
+        <title>Write a Servlet to display parameters available on request.</title>
+        <style>
+            #container
+                {
+                    background-color:#3B0B0B;
+                    color:#FFFFFF;
+                }
+            #mainbody
+                {
+                    width:100%;
+                    height:100%;
+                }
+            .table
+                {
+                    border:6px solid #190707;
+                    border-radius:2px 2px 2px 2px;           
+                    box-shadow:0px 10px 30px 0px black;
+                    margin:12% 25% 20% 25%;
+                    width:50%;
+                    height:50%;
+                }
+            #textbutton
+                {
+                    width:250px;
+                    height:45px;
+                    border-radius:15px;
+                    font-size:20px;
+                    font:bold;                   
+                }
+            #actionbutton
+                {   
+                    width:150px;
+                    height:45px;
+                }
+            #actionbutton:hover
+                {   
+                    width:150px;
+                    height:45px;
+                    background-color:Grey;
+                    color:White;
+                    border-radius:15px;
+                }
+               
+           
+        </style>
+    </head>
+  
+    <body id="container">
+        
+        <h1 style="text-align:center">Estimating house construction cost</h1>
+        <form action="house" method="get">
+            <div id="mainbody">
+                <table class="table" align="center">
+                    <tr align="center">
+                        <td>Material Standard:-</td>
+                       
+                        <td><select name="op">
+                   
+                    <option value="stdmat">material standard materials</option>
+                    <option value="abovestdmat">above standard material</option>
+                    <option value="highstdmat">high standard material</option>
+                    <option value="fulmat">fully automated</option>
+                </select><br><br></td>
+                    </tr>
+                    <tr align="center">
+                        <td>Total Area of House in sq.feet::-</td>
+                        <td> 
+                <input name="txt2" type="text" /><br><br></td>
+                    </tr>
+                   
+                    <tr align="center">
+                        <td colspan="2">
+                             <input type="submit" value="submit" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>
+    
